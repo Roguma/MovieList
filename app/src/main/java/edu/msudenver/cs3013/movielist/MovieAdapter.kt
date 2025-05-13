@@ -1,3 +1,5 @@
+// Rory Oguma CS3013 Major Project 3 Movie List
+
 package edu.msudenver.cs3013.movielist
 
 import android.view.LayoutInflater

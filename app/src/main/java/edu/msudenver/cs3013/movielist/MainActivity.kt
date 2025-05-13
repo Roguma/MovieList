@@ -1,3 +1,5 @@
+// Rory Oguma CS3013 Major Project 3 Movie List
+
 package edu.msudenver.cs3013.movielist
 
 import android.app.Activity
@@ -39,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = movieAdapter
 
         readFile()
-        movieAdapter.notifyDataSetChanged() // Notify after list is potentially populated
+        movieAdapter.notifyDataSetChanged()
 
         val itemTouchHelper = ItemTouchHelper(movieAdapter.swipeToDeleteCallback)
         itemTouchHelper.attachToRecyclerView(recyclerView)
@@ -79,14 +81,14 @@ class MainActivity : AppCompatActivity() {
     private fun readFile() {
         Log.d("MOVIELIST", "readFile() called")
         val file = File(myPlace, "MOVIELIST.csv")
-        movieList.clear() // Clear list before attempting to read or add dummy data
+        movieList.clear()
 
         if (!file.exists()) {
             Log.d("MOVIELIST", "MOVIELIST.csv does not exist. Populating with dummy data.")
             movieList.add(Movie("The Godfather", "1972", "Crime", "9.2"))
             movieList.add(Movie("The Dark Knight", "2008", "Action", "9.0"))
             movieList.add(Movie("The Matrix", "1999", "Science Fiction", "8.7"))
-            return // Dummy data added, no need to try reading file
+            return
         }
 
         try {
