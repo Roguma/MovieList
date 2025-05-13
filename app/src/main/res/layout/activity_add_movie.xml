@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:fitsSystemWindows="true"  tools:context=".AddMovieActivity">
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Title"
+        android:inputType="textCapWords"
+        android:autofillHints="name"/>
+
+    <EditText
+        android:id="@+id/editYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Year (e.g., 2023)"
+        android:inputType="number"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Genre"
+        android:inputType="textCapWords"
+        android:autofillHints=""/>
+
+    <EditText
+        android:id="@+id/editRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Rating (e.g., 8.5)"
+        android:inputType="numberDecimal"
+        android:autofillHints=""/>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Submit Movie"
+        android:onClick="backToFirst"/>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ratingSort"
+        android:orderInCategory="100"
+        android:title="Sort by Rating"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/yearSort"
+        android:orderInCategory="200"
+        android:title="Sort by Year"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/genreSort"
+        android:orderInCategory="300"
+        android:title="Sort by Genre"
+        app:showAsAction="never" />
+
+</menu>
